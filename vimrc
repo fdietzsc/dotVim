@@ -1,4 +1,6 @@
 syntax on
+set background=dark
+colorscheme solarized
 set number
 ":set spell spelllang=en_us
 set tabstop=4
