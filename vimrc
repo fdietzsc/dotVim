@@ -2,6 +2,8 @@ syntax on
 set background=dark
 colorscheme solarized
 set number
+
+set backspace=2
 ":set spell spelllang=en_us
 set tabstop=4
 set softtabstop=4
