@@ -22,6 +22,8 @@ set laststatus=2
 "highlight Tab gui=underline guifg=blue ctermfg=grey ctermbg=darkblue
 "highlight fortranTab gui=underline guifg=blue ctermfg=red ctermbg=lightgrey
 filetype plugin indent on
+filetype on
+filetype indent on
 "nmap <f9> :!make <cr>
 nmap <f10> :TlistToggle <cr>
 let Tlist_Ctags_Cmd="/usr/local/ectags/bin/ctags"
@@ -50,3 +52,4 @@ autocmd BufRead *.dat syntax off
 "nmap <S-F> :set syntax=fortran<CR>:let b:fortran_fixed_source=!b:fortran_fixed_source<CR>:set syntax=text<CR>:set syntax=fortran<CR>
 "nmap <C-F> :filetype detect<CR>
 hi Comment ctermfg=darkcyan
+au! BufRead,BufNewFile *.f90 let b:fortran_do_enddo=1

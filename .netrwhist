@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/fdietzsc/Git/postprocessor/INPUT'
+let g:netrw_dirhist_2='/Users/fdietzsc/Data/beleg_ntfd3/student_data'
+let g:netrw_dirhist_3='/Users/fdietzsc/Git/postprocessor/SOURCES/fgsl/mac/include'
+let g:netrw_dirhist_4='/Users/fdietzsc/Git/postprocessor/SOURCES/fgsl/mac/include/gfortran'
