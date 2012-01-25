@@ -17,6 +17,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set laststatus=2
+set statusline=[%n]\ %1*%<%.99t%*\ %2*%h%w%m%r%*%y[%{&ff}→%{strlen(&fenc)?&fenc:'No\ Encoding'}]%=%-16(\ L%l,C%c\ %)%P
+set relativenumber " Use relative line numbers. Current line is still in status bar.
 "set mouse=a
 "syntax match Tab /\t/
 "highlight Tab gui=underline guifg=blue ctermfg=grey ctermbg=darkblue
