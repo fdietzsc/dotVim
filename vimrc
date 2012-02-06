@@ -1,5 +1,8 @@
 syntax on
 set background=dark
+if $TERM == "xterm-256color"
+	let g:solarized_termcolors=256
+endif
 colorscheme solarized
 set number
 
