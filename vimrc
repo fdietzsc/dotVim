@@ -68,3 +68,7 @@ autocmd BufRead *.dat syntax off
 "nmap <C-F> :filetype detect<CR>
 hi Comment ctermfg=darkcyan
 au! BufRead,BufNewFile *.f90 let b:fortran_do_enddo=1
+" MATLAB SUPPORT
+source $VIMRUNTIME/macros/matchit.vim
+filetype indent on
+autocmd BufEnter *.m    compiler mlint
