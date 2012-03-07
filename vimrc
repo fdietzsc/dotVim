@@ -21,7 +21,6 @@ set incsearch
 set ignorecase
 set laststatus=2
 set statusline=[%n]\ %1*%<%.99t%*\ %2*%h%w%m%r%*%y[%{&ff}→%{strlen(&fenc)?&fenc:'No\ Encoding'}]%=%-16(\ L%l,C%c\ %)%P
-set relativenumber " Use relative line numbers. Current line is still in status bar.
 " switch between relative and absolute numbers
 function! NumberToggle()
 	if(&relativenumber == 1)
@@ -42,7 +41,7 @@ filetype indent on
 "nmap <f9> :!make <cr>
 nmap <f10> :TlistToggle <cr>
 let Tlist_Ctags_Cmd="/usr/local/ectags/bin/ctags"
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+"autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufRead *.dat syntax off
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 " filetype plugin on
