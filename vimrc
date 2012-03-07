@@ -8,10 +8,10 @@ set number
 
 set backspace=2
 ":set spell spelllang=en_us
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set autoindent
+"set tabstop=4
+"set softtabstop=4
+"set shiftwidth=4
+"set autoindent
 "set selectmode=mouse
 "set list
 "set listchars=tab:>.
@@ -35,9 +35,9 @@ nnoremap <C-n> :call NumberToggle()<cr>
 "syntax match Tab /\t/
 "highlight Tab gui=underline guifg=blue ctermfg=grey ctermbg=darkblue
 "highlight fortranTab gui=underline guifg=blue ctermfg=red ctermbg=lightgrey
-filetype plugin indent on
-filetype on
-filetype indent on
+"filetype plugin indent on
+"filetype on
+"filetype indent on
 "nmap <f9> :!make <cr>
 nmap <f10> :TlistToggle <cr>
 let Tlist_Ctags_Cmd="/usr/local/ectags/bin/ctags"
@@ -69,5 +69,5 @@ hi Comment ctermfg=darkcyan
 au! BufRead,BufNewFile *.f90 let b:fortran_do_enddo=1
 " MATLAB SUPPORT
 source $VIMRUNTIME/macros/matchit.vim
-filetype indent on
+"filetype indent on
 autocmd BufEnter *.m    compiler mlint
