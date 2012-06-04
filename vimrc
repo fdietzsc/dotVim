@@ -3,7 +3,8 @@ set background=dark
 if $TERM == "xterm-256color"
 	let g:solarized_termcolors=256
 endif
-colorscheme solarized
+"colorscheme solarized
+colorscheme smyck
 set number
 
 set backspace=2
@@ -36,8 +37,9 @@ nnoremap <C-n> :call NumberToggle()<cr>
 "highlight Tab gui=underline guifg=blue ctermfg=grey ctermbg=darkblue
 "highlight fortranTab gui=underline guifg=blue ctermfg=red ctermbg=lightgrey
 "filetype plugin indent on
-"filetype on
-"filetype indent on
+filetype plugin on
+filetype on
+filetype indent on
 "nmap <f9> :!make <cr>
 nmap <f10> :TlistToggle <cr>
 let Tlist_Ctags_Cmd="/usr/local/ectags/bin/ctags"
