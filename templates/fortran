@@ -1,0 +1,24 @@
+!=============================================================================
+!> @author Felix Dietzsch
+!
+!> @detail
+!> Detailed description of the subroutine
+!> @brief
+!> brief description of the subroutine
+!
+! REVISION HISTORY:
+! 25 07 2011 Initial Version
+!
+!> @param[in] Input parameter
+!> @param[in] Input parameter
+!> @param[in] Input parameter
+!> @param[out] Output parameter
+!> @param[out] Output parameter
+!> @param[out] Output parameter
+!
+!> @todo
+!> Todo list
+!=============================================================================
+SUBROUTINE MAIN()
+
+END SUBROUTINE NAME
