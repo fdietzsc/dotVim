@@ -150,7 +150,7 @@ function! CommentLine()
   elseif file_name =~ '\.[kc]\?sh$' || file_name =~ '\.pl$' || file_name =~ '\.pm$'
     execute ":silent! normal ^i#\<ESC>\<down>^"
   " for .tex files use %
-  elseif file_name =~ '\.tex$' || file_name =~ '\.nw$' || file_name =~ '\.m$'
+  elseif file_name =~ '\.tex$' || file_name =~ '\.nw$' || file_name =~ '\.m$' || file_name =~ '\.cls$'
     execute ":silent! normal ^i%\<ESC>\<down>^"
   " for fortran 77 files use C on first column 
   elseif file_name =~ '\.f$' || file_name =~ '\.F$'
@@ -195,7 +195,7 @@ function! UnCommentLine()
     execute ":silent! normal :nohlsearch\<CR>:s/<!--//\<CR>=="
     execute ":silent! normal :nohlsearch\<CR>:s/-->//\<CR>=="
   " for .tex use %
-  elseif file_name =~ '\.tex$' || file_name =~ '\.nw$' || file_name =~ '\.m$'
+  elseif file_name =~ '\.tex$' || file_name =~ '\.nw$' || file_name =~ '\.m$' || file_name =~ '\.cls$' 
     execute ":silent! normal :nohlsearch\<CR>:s/%/\<CR>:nohlsearch\<CR>"
   " for fortran 77 files use C on first column 
   elseif file_name =~ '\.f$' || file_name =~ '\.F$'

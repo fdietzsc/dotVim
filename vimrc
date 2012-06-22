@@ -36,11 +36,8 @@ nnoremap <C-n> :call NumberToggle()<cr>
 "syntax match Tab /\t/
 "highlight Tab gui=underline guifg=blue ctermfg=grey ctermbg=darkblue
 "highlight fortranTab gui=underline guifg=blue ctermfg=red ctermbg=lightgrey
-"filetype plugin indent on
-filetype plugin on
 filetype plugin indent on
-filetype on
-filetype indent on
+"filetype plugin indent on
 "nmap <f9> :!make <cr>
 nmap <f10> :TlistToggle <cr>
 let Tlist_Ctags_Cmd="/usr/local/ectags/bin/ctags"
@@ -74,3 +71,18 @@ au! BufRead,BufNewFile *.f90 let b:fortran_do_enddo=1
 source $VIMRUNTIME/macros/matchit.vim
 "filetype indent on
 autocmd BufEnter *.m    compiler mlint
+"##################
+" Buffer list
+"
+map <silent> <F3> :call BufferList()<CR>                               
+let g:BufferListWidth = 25                                              
+let g:BufferListMaxWidth = 50                                           
+hi BufferSelected term=reverse ctermfg=white ctermbg=red cterm=bold     
+hi BufferNormal term=NONE ctermfg=black ctermbg=darkcyan cterm=NONE     
+"===============================================================================
+" Fortran specific stuff
+"
+" Source code has tabs in it
+let fortran_have_tabs=1
+
+
